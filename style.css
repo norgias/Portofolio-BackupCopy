@@ -170,6 +170,37 @@ form button {
     border: none;
 }
 
+/* Align the nav menu to the right on desktop */
+@media (min-width: 768px) {
+    #menu {
+        display: flex; /* Ensure it stays horizontal */
+        justify-content: flex-end; /* Push links to the right */
+        align-items: center; /* Vertically center links */
+        list-style: none; /* Remove bullets */
+        margin: 0; /* Reset default margins */
+        padding: 0; /* Reset default padding */
+    }
+
+    #menu li {
+        margin: 0 15px; /* Add spacing between links */
+    }
+
+    #menu li a {
+        color: #ffffff; /* Set link color */
+        text-decoration: none; /* Remove underline */
+        padding: 10px; /* Add padding for clickable area */
+        transition: color 0.3s ease; /* Add a hover effect */
+    }
+
+    #menu li a:hover {
+        color: #00aaff; /* Change color on hover */
+    }
+}
+
+
+
+
+
 /* Responsive Design */
 @media (min-width: 768px) {
     #menu {
