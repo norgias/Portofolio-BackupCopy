@@ -3,9 +3,10 @@ const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 
 menuToggle.addEventListener('click', () => {
-    const isActive = menuToggle.classList.toggle('active');
-    menu.style.display = isActive ? 'block' : 'none';
+    menuToggle.classList.toggle('active'); // Toggle 'active' class
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 });
+
 
 // Ensure menu displays correctly when resizing window
 window.addEventListener('resize', () => {
