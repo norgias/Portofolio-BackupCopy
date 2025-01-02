@@ -24,10 +24,11 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
+    height: 50px;
 }
 footer p {
-    margin-left: -135px;
-    padding-left: -135px;
+    margin-left: -120px;
+    padding-left: -120px;
 }
 
 /* Navigation Styles */
