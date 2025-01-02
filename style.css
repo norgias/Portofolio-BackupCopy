@@ -24,9 +24,10 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 30px;
 }
 footer p {
+    margin-right: 30px
     margin-left: -120px;
     padding-left: -120px;
 }
