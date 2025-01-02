@@ -22,6 +22,11 @@ header {
 footer {
     bottom: 0;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    margin: auto;
 }
 
 /* Navigation Styles */
