@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <button id="menu-toggle">Menu</button>
+            <ul id="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#slider1">Portfolio 1</a></li>
+                <li><a href="#slider2">Portfolio 2</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section about">
+            <h1>About Me</h1>
+            <p>Placeholder for information about you.</p>
+        </section>
+
+        <section id="slider1" class="section slider">
+            <h2>Portfolio Section 1</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item">Image 1</div>
+                    <div class="carousel-item">Image 2</div>
+                    <div class="carousel-item">Image 3</div>
+                </div>
+                <button class="carousel-btn prev">&#9664;</button>
+                <button class="carousel-btn next">&#9654;</button>
+            </div>
+        </section>
+
+        <section id="slider2" class="section slider">
+            <h2>Portfolio Section 2</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item">Image 1</div>
+                    <div class="carousel-item">Image 2</div>
+                    <div class="carousel-item">Image 3</div>
+                </div>
+                <button class="carousel-btn prev">&#9664;</button>
+                <button class="carousel-btn next">&#9654;</button>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Footer Content Here</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
