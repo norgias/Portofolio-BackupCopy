@@ -27,8 +27,9 @@ footer {
     height: 30px;
 }
 footer p {
-    margin-right: 60px;
+    margin-right: 40px;
     margin-bottom: 50px;
+    margin-left: -30px;
   
 }
 
