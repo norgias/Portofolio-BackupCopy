@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    margin: 0;
+}
+
+#menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+#menu-toggle {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+.slider {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.contact {
+    background-color: #d9f4ff;
+    color: #000000;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+    background: #eaeaea;
+    padding: 40px;
+    border: 1px solid #cccccc;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    #menu {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
