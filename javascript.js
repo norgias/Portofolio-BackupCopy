@@ -3,15 +3,17 @@ const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 
 menuToggle.addEventListener('click', () => {
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    const isActive = menuToggle.classList.toggle('active');
+    menu.style.display = isActive ? 'block' : 'none';
 });
 
 // Ensure menu displays correctly when resizing window
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 768) {
         menu.style.display = 'flex';
+        menuToggle.classList.remove('active'); // Reset toggle state
     } else {
-        menu.style.display = 'none'; // Default to collapsed on mobile sizes
+        menu.style.display = 'none';
     }
 });
 
@@ -28,6 +30,9 @@ navLinks.forEach(link => {
         // Prevent shrinking or collapsing of the menu on desktop
         if (window.innerWidth >= 768) {
             menu.style.display = 'flex';
+        } else {
+            menu.style.display = 'none';
+            menuToggle.classList.remove('active');
         }
     });
 });
@@ -57,3 +62,4 @@ carousels.forEach(carousel => {
         updateCarousel();
     });
 });
+
