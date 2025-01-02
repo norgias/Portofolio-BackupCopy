@@ -6,6 +6,15 @@ menuToggle.addEventListener('click', () => {
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 });
 
+// Ensure menu displays correctly when resizing window
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        menu.style.display = 'flex';
+    } else {
+        menu.style.display = 'none'; // Default to collapsed on mobile sizes
+    }
+});
+
 // JavaScript for Smooth Scrolling
 const navLinks = document.querySelectorAll('#menu a');
 
