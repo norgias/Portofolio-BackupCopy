@@ -26,8 +26,8 @@ footer {
     align-items: center;
 }
 footer p {
-    margin-left: 115px;
-    padding-left: 115px;
+    margin-left: -145px;
+    padding-left: -145px;
 }
 
 /* Navigation Styles */
