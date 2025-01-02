@@ -100,10 +100,25 @@ nav {
     align-items: center;
 }
 
+/* About Me Section Styling */
 .about {
-    background-color: #f4f4f4;
-    color: #000000;
+    display: flex;
+    justify-content: center; /* Centers the box horizontally */
+    align-items: center; /* Centers the box vertically */
+    min-height: 100vh; /* Ensures the section covers the full viewport height */
+    background-color: #f4f4f4; /* Background color for the section */
+    padding: 20px;
 }
+
+.about-box {
+    background-color: #ffffff; /* Background color for the box */
+    border-radius: 15px; /* Slightly rounded edges */
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8); /* Very heavy drop shadow */
+    padding: 40px; /* Padding inside the box */
+    max-width: 600px; /* Limit the box width */
+    text-align: center; /* Center the text inside */
+}
+
 
 .slider {
     background-color: #ffffff;
