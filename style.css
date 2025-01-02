@@ -21,6 +21,7 @@ header {
 
 footer {
     bottom: 0;
+    height: 45px;
     text-align: center;
 }
 
