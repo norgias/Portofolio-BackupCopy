@@ -27,6 +27,7 @@ footer {
 }
 footer p {
     margin: auto;
+    padding-left: 15px;
 }
 
 /* Navigation Styles */
