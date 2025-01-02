@@ -15,7 +15,11 @@ navLinks.forEach(link => {
         const targetId = link.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
         targetSection.scrollIntoView({ behavior: 'smooth' });
-        menu.style.display = 'none'; // Collapse menu on mobile after click
+
+        // Prevent shrinking or collapsing of the menu on desktop
+        if (window.innerWidth >= 768) {
+            menu.style.display = 'flex';
+        }
     });
 });
 
