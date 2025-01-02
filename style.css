@@ -12,7 +12,7 @@ header, footer {
     padding: 10px 20px;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 100;
 }
 
 header {
@@ -20,14 +20,9 @@ header {
 }
 
 footer {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 300px;
-    background-color: #000; /* Add a background color */
-    color: #fff; /* Set text color for visibility */
+    bottom: 0;
+    text-align: center;
 }
-
 
 
 /* Navigation Styles */
