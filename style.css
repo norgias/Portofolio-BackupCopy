@@ -47,7 +47,7 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #FF8C00; /* Match header background */
+    background-color: white; /* Match header background */
     display: none; /* Default hidden for mobile */
     transition: max-height 0.4s ease-in-out; /* Smooth toggle effect */
 }
@@ -57,7 +57,7 @@ nav {
 }
 
 #menu li a {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
     padding: 10px;
     display: block;
