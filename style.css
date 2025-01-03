@@ -44,13 +44,12 @@ nav {
 }
 
 #menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #FF8C00;
+    background-color: #FF8C00; /* Match header background */
+    display: none; /* Default hidden for mobile */
+    transition: max-height 0.4s ease-in-out; /* Smooth toggle effect */
 }
 
 #menu li {
@@ -249,11 +248,12 @@ form button {
 
 
 
-/* Mobile Adjustments */
+/* Mobile Menu Behavior */
 @media (max-width: 767px) {
     #menu {
-        max-height: 0;
-        overflow: hidden;
+        display: block; /* Show menu when toggled */
+        max-height: 0; /* Hidden by default */
+        overflow: hidden; /* Prevent overflow when collapsed */
     }
 
     #menu li a {
@@ -263,17 +263,17 @@ form button {
 
     #menu-toggle {
         position: absolute;
-        left: 10px; /* Push hamburger icon to far left */
+        left: 10px; /* Hamburger icon to the far left */
     }
 }
 
-/* Desktop Styles */
+/* Desktop Menu Behavior */
 @media (min-width: 768px) {
     #menu {
-        display: flex; /* Show menu on desktop */
-        max-height: none; /* Remove height restrictions for desktop */
-        justify-content: flex-end;
-        align-items: center;
+        display: flex; /* Show menu as a flex container */
+        max-height: none; /* Remove height restrictions */
+        justify-content: flex-end; /* Align menu items to the right */
+        align-items: center; /* Center vertically */
         padding: 0;
         margin: 0;
     }
@@ -286,7 +286,7 @@ form button {
         color: #ffffff; /* Link color */
         text-decoration: none; /* Remove underline */
         padding: 10px; /* Add padding for clickable area */
-        transition: color 0.3s ease; /* Hover effect */
+        transition: color 0.3s ease; /* Add hover effect */
     }
 
     #menu li a:hover {
@@ -294,7 +294,7 @@ form button {
     }
 
     #menu-toggle {
-        display: none; /* Hide the hamburger menu icon on desktop */
+        display: none; /* Hide toggle button on desktop */
     }
 }
 
