@@ -255,6 +255,11 @@ form button {
         max-height: 0; /* Hidden by default */
         overflow: hidden; /* Prevent overflow when collapsed */
     }
+    footer {
+        height: 40px; /* Adjust height for mobile */
+        font-size: 14px; /* Maintain readability on smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
 
     #menu li a {
         padding-right: 15px;
@@ -291,10 +296,31 @@ form button {
 
     #menu li a:hover {
         color: #00aaff; /* Change color on hover */
+        padding: 5px 10px; /* Reduce padding for navigation links */
     }
 
     #menu-toggle {
         display: none; /* Hide toggle button on desktop */
+    }
+    header {
+        height: 50px; /* Adjust height for desktop */
+        padding: 5px 20px; /* Reduce padding */
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        height: 100%; /* Ensure full height alignment */
+    }
+
+    #name-header {
+        font-size: 14px; /* Adjust text size to fit smaller height */
+        padding-left: 10px; /* Reduce padding from the left */
+    }
+    footer {
+        height: 30px; /* Reduce height for desktop */
+        font-size: 12px; /* Adjust font size */
+        padding: 5px 10px; /* Reduce padding */
     }
 }
 
