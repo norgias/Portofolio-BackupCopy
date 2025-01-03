@@ -29,18 +29,18 @@ footer {
 /* Navigation Styles */
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    margin: 0; /* Reset default margin */
-    padding: 0 20px 0 0; /* Add padding on the right to nudge links left */
+    padding: 0 20px;
 }
+
 #name-header {
-    font-size: 16px; /* Adjust font size as needed */
-    color: #ffffff; /* Text color */
-    margin-right: auto; /* Push the name to the left */
-    padding-left: 20px; /* Add spacing from the edge of the nav bar */
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: auto;
+    padding-left: 20px;
     display: flex;
-    align-items: center; /* Vertically center it in the nav bar */
+    align-items: center;
 }
 
 #menu {
@@ -50,7 +50,7 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #FF8C00; /* Match header background */
+    background-color: #FF8C00;
 }
 
 #menu li {
@@ -68,9 +68,8 @@ nav {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px; /* Adjust size as needed */
-    color: #ffffff; /* Set the icon color */
-    z-index: 1000;
+    font-size: 24px;
+    color: #ffffff;
     position: relative;
 }
 
@@ -89,7 +88,6 @@ nav {
 #menu-toggle.active .fa-times {
     display: block;
 }
-
 
 
 
@@ -239,41 +237,23 @@ form button {
     border: none;
 }
 
-/* Align the nav menu to the right on desktop */
-@media (min-width: 768px) {
-    #menu {
-        display: flex; /* Ensure it stays horizontal */
-        justify-content: flex-end; /* Push links to the right */
-        align-items: center; /* Vertically center links */
-        list-style: none; /* Remove bullets */
-        margin: 0; /* Reset default margins */
-        padding: 0; /* Reset default padding */
-    }
-
-    #menu li {
-        margin: 0 15px; /* Add spacing between links */
-    }
-
-    #menu li a {
-        color: #ffffff; /* Set link color */
-        text-decoration: none; /* Remove underline */
-        padding: 10px; /* Add padding for clickable area */
-        transition: color 0.3s ease; /* Add a hover effect */
-    }
-
-    #menu li a:hover {
-        color: #00aaff; /* Change color on hover */
-    }
-}
-
-
-
-
-
-/* Responsive Design */
+/* Desktop Menu */
 @media (min-width: 768px) {
     #menu {
         display: flex;
+        max-height: none;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    #menu li {
+        margin: 0 15px;
+    }
+
+    #menu li a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
     }
 
     #menu-toggle {
@@ -281,13 +261,22 @@ form button {
     }
 }
 
-@media (min-width: 768px) {
-    .carousel-item img {
-        max-width: 800px; /* Set a maximum width */
-        max-height: 800px; /* Set a maximum height */
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+    #menu {
+        text-align: right;
+    }
+
+    #menu li a {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #menu-toggle {
+        position: absolute;
+        left: 10px; /* Push hamburger icon to far left */
     }
 }
-
 
 
 
