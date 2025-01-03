@@ -237,6 +237,16 @@ form button {
     border: none;
 }
 
+
+/* Enforce 800px by 800px dimensions on desktop */
+@media (min-width: 768px) {
+    .carousel-item img {
+        max-width: 800px; /* Set a fixed max width */
+        max-height: 800px; /* Set a fixed max height */
+    }
+}
+
+
 /* Desktop Menu */
 @media (min-width: 768px) {
     #menu {
