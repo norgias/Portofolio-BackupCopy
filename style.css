@@ -290,7 +290,8 @@ form button {
 
 @media (max-width: 768px) {
     #menu-toggle {
-        margin-right: -40px; /* Adjust the value to nudge it further right */
+        justify-content: flex-start; 
+        
     }
 }
 
