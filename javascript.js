@@ -19,6 +19,45 @@ window.addEventListener('resize', () => {
 });
 
 // JavaScript for Smooth Scrolling
+const scrollDuration = 800; // Adjust this value to control scroll speed (in milliseconds)
+
+// Function to handle smooth scrolling
+function smoothScroll(targetSection, duration) {
+    const targetPosition = targetSection.getBoundingClientRect().top; // Distance from top of viewport
+    const startPosition = window.pageYOffset; // Current scroll position
+    const distance = targetPosition; // Total distance to scroll
+    let startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    // Ease function for smooth effect
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+}
+
+// Add event listeners to navigation links
+navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = link.getAttribute('href').substring(1); // Get target section ID
+        const targetSection = document.getElementById(targetId); // Find target section
+        smoothScroll(targetSection, scrollDuration); // Call the smooth scroll function
+    });
+});
+
+// JS for image slider carousel
 const carousels = document.querySelectorAll('.carousel');
 
 carousels.forEach(carousel => {
@@ -45,4 +84,4 @@ carousels.forEach(carousel => {
         updateCarousel();
     });
 });
-// JS for image slider carousel ^
+ 
