@@ -294,4 +294,8 @@ form button {
     }
 }
 
-
+@media (max-width: 768px) {
+    #menu {
+        margin-left: 14px; /* Slightly nudge the menu items to the left */
+    }
+}
