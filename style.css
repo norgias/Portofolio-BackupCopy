@@ -247,29 +247,7 @@ form button {
 }
 
 
-/* Desktop Menu */
-@media (min-width: 768px) {
-    #menu {
-        display: flex;
-        max-height: none;
-        justify-content: flex-end;
-        padding: 0;
-    }
 
-    #menu li {
-        margin: 0 15px;
-    }
-
-    #menu li a {
-        color: #ffffff;
-        text-decoration: none;
-        padding: 10px;
-    }
-
-    #menu-toggle {
-        display: none;
-    }
-}
 
 /* Mobile Adjustments */
 @media (max-width: 767px) {
@@ -288,7 +266,36 @@ form button {
     }
 }
 
+/* Desktop Styles */
+@media (min-width: 768px) {
+    #menu {
+        display: flex; /* Show menu on desktop */
+        max-height: none; /* Remove height restrictions for desktop */
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
+    #menu li {
+        margin: 0 15px; /* Add spacing between items */
+    }
+
+    #menu li a {
+        color: #ffffff; /* Link color */
+        text-decoration: none; /* Remove underline */
+        padding: 10px; /* Add padding for clickable area */
+        transition: color 0.3s ease; /* Hover effect */
+    }
+
+    #menu li a:hover {
+        color: #00aaff; /* Change color on hover */
+    }
+
+    #menu-toggle {
+        display: none; /* Hide the hamburger menu icon on desktop */
+    }
+}
 
         
 
