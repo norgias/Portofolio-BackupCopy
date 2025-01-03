@@ -1,31 +1,29 @@
 // JavaScript for Navigation Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
+const navLinks = document.querySelectorAll('#menu a');
+
+// Smooth transition for menu toggle
+menu.style.transition = 'max-height 0.4s ease-in-out';
+menu.style.overflow = 'hidden';
+menu.style.maxHeight = '0px';
 
 menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active'); // Toggle 'active' class
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-});
-
-
-// Ensure menu displays correctly when resizing window
-window.addEventListener('resize', () => {
-    if (window.innerWidth >= 768) {
-        menu.style.display = 'flex';
-        menuToggle.classList.remove('active'); // Reset toggle state
+    menuToggle.classList.toggle('active');
+    if (menu.style.maxHeight === '0px') {
+        menu.style.maxHeight = menu.scrollHeight + 'px';
     } else {
-        menu.style.display = 'none';
+        menu.style.maxHeight = '0px';
     }
 });
 
-// JavaScript for Smooth Scrolling
-const scrollDuration = 800; // Adjust this value to control scroll speed (in milliseconds)
+// Smooth scrolling functionality
+const scrollDuration = 800;
 
-// Function to handle smooth scrolling
 function smoothScroll(targetSection, duration) {
-    const targetPosition = targetSection.getBoundingClientRect().top; // Distance from top of viewport
-    const startPosition = window.pageYOffset; // Current scroll position
-    const distance = targetPosition; // Total distance to scroll
+    const targetPosition = targetSection.offsetTop;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
     let startTime = null;
 
     function animation(currentTime) {
@@ -36,24 +34,22 @@ function smoothScroll(targetSection, duration) {
         if (timeElapsed < duration) requestAnimationFrame(animation);
     }
 
-    // Ease function for smooth effect
     function ease(t, b, c, d) {
         t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
+        if (t < 1) return (c / 2) * t * t + b;
         t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
     }
 
     requestAnimationFrame(animation);
 }
 
-// Add event listeners to navigation links
-navLinks.forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault(); // Prevent default anchor behavior
-        const targetId = link.getAttribute('href').substring(1); // Get target section ID
-        const targetSection = document.getElementById(targetId); // Find target section
-        smoothScroll(targetSection, scrollDuration); // Call the smooth scroll function
+navLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        smoothScroll(targetSection, scrollDuration);
     });
 });
 
