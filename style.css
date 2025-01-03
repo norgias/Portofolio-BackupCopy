@@ -141,14 +141,13 @@ nav {
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    gap: 20px; /* Add spacing between thumbnails */
+    gap: 10px; /* Add spacing between thumbnails */
 }
 
 .carousel-item {
-    flex: 0 0 auto; /* ensures items dont stretch out too far */
+    flex: 0 0 75%; /* ensures items dont stretch out too far */
     text-align: center;
     display: flex;
-    width: auto; /* Allow dynamic width for thumbnails */
     justify-content: center;
     align-items: center;
     overflow: hidden;
