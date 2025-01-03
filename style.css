@@ -288,17 +288,7 @@ form button {
     }
 }
 
-@media (max-width: 768px) {
-    #menu-toggle {
-        justify-content: flex-start; 
-        
-    }
-    #menu {
-        margin-right: 20px;
-    }
 
-}
-        
 
 
         
