@@ -1,70 +1,25 @@
+// JavaScript for Navigation Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
-const navLinks = document.querySelectorAll('#menu a');
-
-// Smooth transition for menu toggle
-menu.style.transition = 'max-height 0.4s ease-in-out';
-menu.style.overflow = 'hidden';
-
-// Ensure initial menu state is hidden
-menu.style.maxHeight = '0px';
 
 menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    
-    if (menu.style.maxHeight === '0px' || menu.style.maxHeight === '') {
-        menu.style.maxHeight = menu.scrollHeight + 'px'; // Dynamically set to menu content height
-    } else {
-        menu.style.maxHeight = '0px';
-    }
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 });
 
-// Reset menu state on window resize
-window.addEventListener('resize', () => {
-    if (window.innerWidth >= 768) {
-        menu.style.maxHeight = ''; // Clear inline styles to default behavior for larger screens
-    } else if (!menuToggle.classList.contains('active')) {
-        menu.style.maxHeight = '0px';
-    }
-});
+// JavaScript for Smooth Scrolling
+const navLinks = document.querySelectorAll('#menu a');
 
-// Smooth scrolling functionality
-const scrollDuration = 800;
-
-function smoothScroll(targetSection, duration) {
-    const targetPosition = targetSection.offsetTop;
-    const startPosition = window.scrollY;
-    const distance = targetPosition - startPosition;
-    let startTime = null;
-
-    function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-    }
-
-    function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return (c / 2) * t * t + b;
-        t--;
-        return (-c / 2) * (t * (t - 2) - 1) + b;
-    }
-
-    requestAnimationFrame(animation);
-}
-
-navLinks.forEach((link) => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault();
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
-        smoothScroll(targetSection, scrollDuration);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+        menu.style.display = 'none'; // Collapse menu on mobile after click
     });
 });
 
-// JS for image slider carousel
+// JavaScript for Image Sliders
 const carousels = document.querySelectorAll('.carousel');
 
 carousels.forEach(carousel => {
@@ -75,10 +30,8 @@ carousels.forEach(carousel => {
 
     let currentIndex = 0;
 
-    // Adjust the track width dynamically based on items
     const updateCarousel = () => {
-        const itemWidth = items[0].getBoundingClientRect().width;
-        track.style.transform = `translateX(-${currentIndex * (itemWidth + 20)}px)`; // Include gap
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
     };
 
     prevButton.addEventListener('click', () => {
@@ -91,4 +44,5 @@ carousels.forEach(carousel => {
         updateCarousel();
     });
 });
+
  
