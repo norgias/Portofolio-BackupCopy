@@ -252,7 +252,8 @@ form button {
 /* Mobile Adjustments */
 @media (max-width: 767px) {
     #menu {
-        text-align: right;
+        max-height: 0;
+        overflow: hidden;
     }
 
     #menu li a {
