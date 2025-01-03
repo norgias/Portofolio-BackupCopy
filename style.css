@@ -133,7 +133,7 @@ nav {
 /* Carousel Styles */
 .carousel {
     position: relative;
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     margin: 20px auto;
 }
@@ -145,7 +145,7 @@ nav {
 }
 
 .carousel-item {
-    flex: 0 0 75%; /* ensures items dont stretch out too far */
+    flex: 0 0 100%; 
     text-align: center;
     display: flex;
     justify-content: center;
@@ -253,8 +253,8 @@ form button {
 
 @media (min-width: 768px) {
     .carousel-item img {
-        max-width: 200px; /* Set a maximum width */
-        max-height: 200px; /* Set a maximum height */
+        max-width: 400px; /* Set a maximum width */
+        max-height: 400px; /* Set a maximum height */
     }
 }
 
