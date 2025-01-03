@@ -19,26 +19,6 @@ window.addEventListener('resize', () => {
 });
 
 // JavaScript for Smooth Scrolling
-const navLinks = document.querySelectorAll('#menu a');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-
-        // Prevent shrinking or collapsing of the menu on desktop
-        if (window.innerWidth >= 768) {
-            menu.style.display = 'flex';
-        } else {
-            menu.style.display = 'none';
-            menuToggle.classList.remove('active');
-        }
-    });
-});
-
-// JavaScript for Image Sliders
 const carousels = document.querySelectorAll('.carousel');
 
 carousels.forEach(carousel => {
@@ -49,8 +29,10 @@ carousels.forEach(carousel => {
 
     let currentIndex = 0;
 
+    // Adjust the track width dynamically based on items
     const updateCarousel = () => {
-        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        const itemWidth = items[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${currentIndex * (itemWidth + 20)}px)`; // Include gap
     };
 
     prevButton.addEventListener('click', () => {
@@ -63,4 +45,4 @@ carousels.forEach(carousel => {
         updateCarousel();
     });
 });
-
+// JS for image slider carousel ^
