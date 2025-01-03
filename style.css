@@ -100,6 +100,33 @@ nav {
     align-items: center;
 }
 
+To adjust the sections with IDs slider1 and slider2 so they have different background colors and a height slightly larger than the images they contain, you can update the CSS and add specific styles for each section.
+
+CSS Code
+css
+Copy code
+/* General Styles for Slider Sections */
+.slider {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Add padding around the content */
+}
+
+/* Specific Styles for Slider 1 */
+#slider1 {
+    background-color: #f0f8ff; /* Light blue for slider1 */
+    height: auto; /* Let the height adjust to the content */
+    min-height: 150px; /* Ensure a minimum height for visual balance */
+}
+
+/* Specific Styles for Slider 2 */
+#slider2 {
+    background-color: #ffe4e1; /* Light pink for slider2 */
+    height: auto; /* Let the height adjust to the content */
+    min-height: 150px; /* Ensure a minimum height for visual balance */
+}
+
 /* About Me Section Styling */
 .about {
     display: flex;
