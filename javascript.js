@@ -6,24 +6,36 @@ menu.style.transition = 'max-height 0.4s ease-in-out';
 menu.style.overflow = 'hidden';
 menu.style.maxHeight = '0px'; // Ensure menu is initially hidden
 
+// Toggle menu for mobile
 menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
     if (menu.style.maxHeight === '0px' || menu.style.maxHeight === '') {
-        menu.style.maxHeight = menu.scrollHeight + 'px'; // Dynamically set height
+        menu.style.maxHeight = menu.scrollHeight + 'px'; // Expand menu
     } else {
         menu.style.maxHeight = '0px'; // Collapse menu
     }
 });
 
-// Reset menu state on resize
-window.addEventListener('resize', () => {
+// Handle menu visibility on desktop
+const updateMenuVisibility = () => {
     if (window.innerWidth >= 768) {
-        menu.style.maxHeight = ''; // Clear inline styles for desktop
-    } else if (!menuToggle.classList.contains('active')) {
+        menu.style.display = 'flex'; // Show menu on desktop
+        menu.style.maxHeight = ''; // Remove max-height restrictions
+        menuToggle.style.display = 'none'; // Hide toggle button on desktop
+    } else {
+        menu.style.display = ''; // Reset to default for mobile
         menu.style.maxHeight = '0px'; // Ensure collapsed state for mobile
+        menuToggle.style.display = 'block'; // Show toggle button on mobile
     }
-});
+};
 
+// Initialize menu visibility on page load
+updateMenuVisibility();
+
+// Update menu visibility on window resize
+window.addEventListener('resize', updateMenuVisibility);
+
+// Smooth scrolling functionality
 const navLinks = document.querySelectorAll('#menu a');
 const scrollDuration = 800;
 
