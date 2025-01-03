@@ -1,4 +1,3 @@
-// JavaScript for Navigation Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 const navLinks = document.querySelectorAll('#menu a');
@@ -6,13 +5,25 @@ const navLinks = document.querySelectorAll('#menu a');
 // Smooth transition for menu toggle
 menu.style.transition = 'max-height 0.4s ease-in-out';
 menu.style.overflow = 'hidden';
+
+// Ensure initial menu state is hidden
 menu.style.maxHeight = '0px';
 
 menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
-    if (menu.style.maxHeight === '0px') {
-        menu.style.maxHeight = menu.scrollHeight + 'px';
+    
+    if (menu.style.maxHeight === '0px' || menu.style.maxHeight === '') {
+        menu.style.maxHeight = menu.scrollHeight + 'px'; // Dynamically set to menu content height
     } else {
+        menu.style.maxHeight = '0px';
+    }
+});
+
+// Reset menu state on window resize
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        menu.style.maxHeight = ''; // Clear inline styles to default behavior for larger screens
+    } else if (!menuToggle.classList.contains('active')) {
         menu.style.maxHeight = '0px';
     }
 });
