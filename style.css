@@ -290,7 +290,7 @@ form button {
     }
 
     #menu li a {
-        color: #ffffff; /* Link color */
+        color: black; /* Link color */
         text-decoration: none; /* Remove underline */
         padding: 10px; /* Add padding for clickable area */
         transition: color 0.3s ease; /* Add hover effect */
