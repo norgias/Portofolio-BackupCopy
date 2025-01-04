@@ -80,7 +80,7 @@ nav {
     padding-left: 20px;
     display: flex;
     align-items: center;
-    font-family: Arial, sans-serif !important;
+    
 }
 
 #menu {
@@ -96,7 +96,7 @@ nav {
     margin: 0
     text-decoration: none;
     color: black;
-    font-family: Arial, sans-serif !important;
+    
 }
 
 #menu li a {
