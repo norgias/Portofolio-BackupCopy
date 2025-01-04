@@ -361,7 +361,7 @@ form button {
         padding-left: 15px;
     }
     #menu li {
-        margin-left: 1.2px;
+        margin-left: -1px;
     }
 
     #menu-toggle {
@@ -373,7 +373,7 @@ form button {
          max-width: 80% !important; /* Prevents it from taking too much space */
          overflow: hidden; /* Avoids overlapping content */
          flex: 0 1 auto; /* Prevents it from growing too large */
-         padding-right: -20px;
+         padding-right: 20px;
          background-color: transparent !important;
     
      }
