@@ -3,7 +3,7 @@
 body, html {
     margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6
+    line-height: 1.6;
     padding: 0;
     height: 100%;
     
@@ -19,6 +19,7 @@ body, html {
     height: 100%;
     z-index: -1; /* Push behind content */
     overflow: hidden;
+    background: black;
 }
 
 #background-video {
@@ -29,8 +30,8 @@ body, html {
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
     object-fit: cover; /* Ensure the video covers the entire container */
-    z-index: -1; /* Push behind content */
 }
+
 /* Page Content */
 #content {
     position: relative;
