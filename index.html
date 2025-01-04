@@ -9,9 +9,10 @@
 
     <title>Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=6.5">
+    <link rel="stylesheet" href="style.css?v=6.6">
 </head>
 <body>
+    
     <header>
         <nav id="navbar">
             <div id="name-header">Nicolas J. Orgias | Web Development | Video Editing</div>
@@ -28,7 +29,14 @@
         </nav>
     </header>
 
-    <main>
+    <div id="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="path/to/your/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+     </div>
+        
+        
         <section class="about" id="about">
             <div class="about-box">
                <h1>About Me</h1>
