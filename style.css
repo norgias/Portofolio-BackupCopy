@@ -77,6 +77,10 @@ nav {
     padding-left: 20px;
     display: flex;
     align-items: center;
+    position: relative; /* Ensure it doesn't interfere with other elements */
+    z-index: 10; /* Keeps it on top */
+    max-width: 80%; /* Prevents it from taking too much space */
+    overflow: hidden; /* Avoids overlapping content */
 }
 
 #menu {
