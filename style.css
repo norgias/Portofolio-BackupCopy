@@ -361,7 +361,8 @@ form button {
         padding-left: 15px;
     }
     #menu li {
-        margin-left: -1px;
+        margin-left: 1px;
+        margin-right: 6px;
     }
 
     #menu-toggle {
