@@ -184,8 +184,20 @@ Copy code
     text-align: center; /* Center the text inside */
 }
 
+.about-box h1 {
+    display: inline-block; /* Ensures the box adjusts to the text width */
+    padding: 10px 20px; /* Adds spacing inside the box */
+    border: 2px solid black; /* Creates the border */
+    border-radius: 10px; /* Rounds the edges slightly */
+    color: black; /* Text color */
+    font-size: 24px; /* Adjusts the font size */
+    text-align: center; /* Centers the text */
+    background-color: transparent; /* Transparent background (not filled) */
+}
 
 
+
+/* Slider section style */
 .slider {
     color: white;
 }
