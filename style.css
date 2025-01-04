@@ -72,7 +72,7 @@ nav {
 
 #name-header {
     font-family: Arial, sans-serif;
-    background-color: transparent !important;
+    max-width: 80% !important;
     font-size: 16px;
     color: black;
     margin-right: auto;
@@ -370,10 +370,11 @@ form button {
     }
     #name-header {
          position: relative; /* Ensure it doesn't interfere with other elements */
-         max-width: 50% !important; /* Prevents it from taking too much space */
+         max-width: 80% !important; /* Prevents it from taking too much space */
          overflow: hidden; /* Avoids overlapping content */
          flex: 0 1 auto; /* Prevents it from growing too large */
-        padding-right: 20px;
+         padding-right: -20px;
+         background-color: transparent !important;
     
      }
 
