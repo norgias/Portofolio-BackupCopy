@@ -273,6 +273,7 @@ form button {
     border: none;
 }
 #contact {
+    background-color: black;
     color: #ffffff !important; 
 }
 
