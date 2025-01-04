@@ -352,6 +352,9 @@ form button {
         padding-right: 15px;
         padding-left: 15px;
     }
+    #menu li {
+        margin-left: -10px;
+    }
 
     #menu-toggle {
         position: absolute;
