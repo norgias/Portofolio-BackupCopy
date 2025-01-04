@@ -71,6 +71,7 @@ nav {
 }
 
 #name-header {
+    font-family: Arial, sans-serif;
     background-color: transparent !important;
     font-size: 16px;
     color: black;
@@ -416,7 +417,7 @@ form button {
     }
 
     #name-header {
-        font-size: 14px; /* Adjust text size to fit smaller height */
+        font-size: 10px; /* Adjust text size to fit smaller height */
         padding-left: 10px; /* Reduce padding from the left */
     }
     footer {
