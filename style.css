@@ -171,7 +171,7 @@ Copy code
     justify-content: center; /* Centers the box horizontally */
     align-items: center; /* Centers the box vertically */
     min-height: 100vh; /* Ensures the section covers the full viewport height */
-    background-color: rgba(244, 244, 244, 0.8);
+    background-color: rgba(244, 244, 244, 0.0);
     padding: 20px;
 }
 
