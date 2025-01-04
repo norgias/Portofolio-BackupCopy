@@ -272,7 +272,9 @@ form button {
     cursor: pointer;
     border: none;
 }
-
+#contact {
+    color: #ffffff !important; 
+}
 
 /* Enforce 800px by 800px dimensions on desktop */
 @media (min-width: 768px) {
