@@ -162,11 +162,11 @@ Copy code
     min-height: 150px; /* Ensure a minimum height for visual balance */
 }
 #slider1 h2 {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.8);
     display: inline-block; /* Ensures the box adjusts to the text width */
     padding: 10px 20px; /* Adds spacing inside the box */
-    border: 2px solid black; /* Creates the border */
+    border: 2px solid white; /* Creates the border */
     border-radius: 10px; /* Rounds the edges slightly */
     color: black; /* Text color */
     font-size: 24px; /* Adjusts the font size */
