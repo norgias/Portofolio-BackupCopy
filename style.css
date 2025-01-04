@@ -267,8 +267,8 @@ form input, form textarea, form button {
 }
 
 form button {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     cursor: pointer;
     border: none;
 }
