@@ -101,3 +101,26 @@ carousels.forEach((carousel) => {
     // Ensure carousel position is updated on window resize
     window.addEventListener('resize', updateCarousel);
 });
+
+// YouTube Player Initialization
+function onYouTubeIframeAPIReady() {
+    new YT.Player('player', {
+        videoId: 'Y891f0XnEms', // Replace with your video ID
+        playerVars: {
+            autoplay: 1,       // Start automatically
+            mute: 1,           // Mute the video
+            loop: 1,           // Enable looping
+            playlist: 'Y891f0XnEms', // Required for looping
+            controls: 0,       // Hide video controls
+            modestbranding: 1, // Minimal YouTube branding
+            rel: 0,            // Disable related videos
+            showinfo: 0,       // Disable video title and info
+            disablekb: 1       // Disable keyboard controls
+        },
+        events: {
+            onReady: function(event) {
+                event.target.playVideo(); // Ensure the video starts playing
+            }
+        }
+    });
+}
