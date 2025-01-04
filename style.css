@@ -160,7 +160,7 @@ Copy code
 
 /* Specific Styles for Slider 2 */
 #slider2 {
-    background-color: #ffe4e1; /* Light pink for slider2 */
+    background-color: black; /* Light pink for slider2 */
     height: auto; /* Let the height adjust to the content */
     min-height: 150px; /* Ensure a minimum height for visual balance */
 }
