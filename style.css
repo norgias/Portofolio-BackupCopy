@@ -373,6 +373,7 @@ form button {
          max-width: 50% !important; /* Prevents it from taking too much space */
          overflow: hidden; /* Avoids overlapping content */
          flex: 0 1 auto; /* Prevents it from growing too large */
+        padding-right: 20px;
     
      }
 
