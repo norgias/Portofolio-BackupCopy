@@ -13,13 +13,7 @@
 </head>
 <body>
 <div id="video-container">
-    <iframe 
-        src="https://www.youtube.com/embed/Y891f0XnEms?autoplay=1&mute=1&loop=1&playlist=Y891f0XnEms" 
-        id="background-video" 
-        frameborder="0" 
-        allow="autoplay; muted; loop" 
-        allowfullscreen>
-    </iframe>
+    <div id="player"></div>
 </div>
     
     <header>
@@ -107,7 +101,8 @@
     <footer>
         <p>2024 Nicolas J Orgias Portfolio</p>
     </footer>
-
-    <script src="javascript.js?v=2.3"></script>
+        <!-- Include YouTube Player API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="javascript.js?v=2.4"></script>
 </body>
 </html>
