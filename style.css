@@ -98,6 +98,8 @@ nav {
 #menu li {
     text-decoration: none;
     color: black;
+    position: relative;
+    z-index: 9999 !important;
 }
 
 #menu li a {
