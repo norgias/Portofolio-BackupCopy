@@ -60,6 +60,9 @@ footer {
     height: 45px;
     text-align: center;
 }
+#foot p {
+    margin-left: -12px;
+    font-family: Arial, sans-serif !important;
 
 
 /* Navigation Styles */
