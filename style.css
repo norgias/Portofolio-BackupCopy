@@ -355,7 +355,7 @@ form button {
 
     #menu-toggle {
         position: absolute;
-        left: 10px; /* Hamburger icon to the far left */
+        left: 30px; /* Hamburger icon to the far left */
     }
 }
 
