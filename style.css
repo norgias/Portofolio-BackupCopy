@@ -153,8 +153,8 @@ Copy code
 
 /* Specific Styles for Slider 1 */
 #slider1 {
-    background-color: #f0f8ff; /* Light blue for slider1 */
-    height: auto; /* Let the height adjust to the content */
+    background-color: #00ff00; /* Light green for slider1 background color */
+    height: auto; /* Lets the height adjust to the content */
     min-height: 150px; /* Ensure a minimum height for visual balance */
 }
 #slider1 h2 {
