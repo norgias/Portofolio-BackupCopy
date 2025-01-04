@@ -1,8 +1,41 @@
 /* General Styles */
-body {
+
+body, html {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Video Container */
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Push behind content */
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%); /* Center video */
+}
+
+/* Page Content */
+#content {
+    position: relative;
+    z-index: 1; /* Place content above video */
+    color: white; /* Adjust text color for contrast */
+    text-align: center;
+    padding: 20px;
 }
 
 header, footer {
