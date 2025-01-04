@@ -77,6 +77,7 @@ nav {
     padding-left: 20px;
     display: flex;
     align-items: center;
+    font-family: Arial, sans-serif !important;
 }
 
 #menu {
@@ -92,6 +93,7 @@ nav {
     margin: 0
     text-decoration: none;
     color: black;
+    font-family: Arial, sans-serif !important;
 }
 
 #menu li a {
@@ -415,6 +417,7 @@ form button {
         height: 30px; /* Reduce height for desktop */
         font-size: 12px; /* Adjust font size */
         padding: 5px 10px; /* Reduce padding */
+       
     }
 }
 
