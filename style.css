@@ -422,26 +422,7 @@ form button {
     }
 }
 
-@media (max-width: 768px) {
-    nav {
-        position: relative;
-        z-index: 5; /* Ensures the nav menu appears below */
-    }
 
-    #name-header {
-        padding-left: 10px; /* Reduce padding for mobile */
-        max-width: 70%; /* Leaves room for the menu */
-    }
-
-    .nav-menu {
-        position: absolute;
-        top: 100%; /* Aligns below the nav bar */
-        left: 0;
-        width: 100%;
-        background-color: white; /* Matches the nav background */
-        z-index: 15; /* Ensures visibility over other elements */
-    }
-}        
 
         
 
