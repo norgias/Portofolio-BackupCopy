@@ -218,6 +218,10 @@ Copy code
     background-color: transparent; /* Transparent background (not filled) */
 }
 
+.about-box p {
+    font-family: Arial, sans-serif !important
+}
+
 
 
 /* Slider section style */
