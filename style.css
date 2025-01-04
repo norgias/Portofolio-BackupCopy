@@ -2,9 +2,11 @@
 
 body, html {
     margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6
     padding: 0;
     height: 100%;
-    overflow: hidden; /* Prevent scrollbars */
+    
 }
 
 /* Video Container */
