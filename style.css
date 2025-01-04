@@ -10,6 +10,7 @@ body, html {
 }
 
 /* Video Container */
+/* Video Container */
 #video-container {
     position: fixed;
     top: 0;
@@ -22,15 +23,14 @@ body, html {
 
 #background-video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: cover;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensure the video covers the entire container */
+    z-index: -1; /* Push behind content */
 }
-
 /* Page Content */
 #content {
     position: relative;
