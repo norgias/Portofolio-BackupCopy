@@ -80,12 +80,7 @@ nav {
     padding-right: 0;
     display: flex;
     align-items: center;
-    position: relative; /* Ensure it doesn't interfere with other elements */
-    z-index: 10; /* Keeps it on top */
-    max-width: 80%; /* Prevents it from taking too much space */
-    overflow: hidden; /* Avoids overlapping content */
-    flex: 0 1 auto; /* Prevents it from growing too large */
-}
+   }
 
 #menu {
     list-style: none;
@@ -373,7 +368,14 @@ form button {
         position: absolute;
         left: -10px; /* Hamburger icon to the far left */
     }
-}
+    #name-header {
+         font-size: 10px;
+         position: relative; /* Ensure it doesn't interfere with other elements */
+         max-width: 80%; /* Prevents it from taking too much space */
+         overflow: hidden; /* Avoids overlapping content */
+         flex: 0 1 auto; /* Prevents it from growing too large */
+    
+     }
 
 /* Desktop Menu Behavior */
 @media (min-width: 768px) {
