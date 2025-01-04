@@ -158,6 +158,8 @@ Copy code
     min-height: 150px; /* Ensure a minimum height for visual balance */
 }
 #slider1 h2 {
+    backround-color: white;
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8);
     display: inline-block; /* Ensures the box adjusts to the text width */
     padding: 10px 20px; /* Adds spacing inside the box */
     border: 2px solid black; /* Creates the border */
