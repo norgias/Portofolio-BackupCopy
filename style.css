@@ -157,6 +157,25 @@ Copy code
     height: auto; /* Let the height adjust to the content */
     min-height: 150px; /* Ensure a minimum height for visual balance */
 }
+#slider1 h2 {
+    display: inline-block; /* Ensures the box adjusts to the text width */
+    padding: 10px 20px; /* Adds spacing inside the box */
+    border: 2px solid black; /* Creates the border */
+    border-radius: 10px; /* Rounds the edges slightly */
+    color: black; /* Text color */
+    font-size: 24px; /* Adjusts the font size */
+    text-align: center; /* Centers the text */
+    background-color: transparent; /* Transparent background (not filled) */
+}
+    
+
+
+/* Specific Styles for Slider 2 */
+#slider2 {
+    background-color: black; /* Light pink for slider2 */
+    height: auto; /* Let the height adjust to the content */
+    min-height: 150px; /* Ensure a minimum height for visual balance */
+}
 #slider2 h2 {
     display: inline-block; /* Ensures the box adjusts to the text width */
     padding: 10px 20px; /* Adds spacing inside the box */
@@ -166,13 +185,6 @@ Copy code
     font-size: 24px; /* Adjusts the font size */
     text-align: center; /* Centers the text */
     background-color: transparent; /* Transparent background (not filled) */
-}
-
-/* Specific Styles for Slider 2 */
-#slider2 {
-    background-color: black; /* Light pink for slider2 */
-    height: auto; /* Let the height adjust to the content */
-    min-height: 150px; /* Ensure a minimum height for visual balance */
 }
 
 /* About Me Section Styling */
@@ -298,6 +310,17 @@ form button {
 #contact {
     color: #ffffff !important; 
 }
+#contact h2 {
+    display: inline-block; /* Ensures the box adjusts to the text width */
+    padding: 10px 20px; /* Adds spacing inside the box */
+    border: 2px solid white; /* Creates the border */
+    border-radius: 10px; /* Rounds the edges slightly */
+    color: white !important; /* Text color */
+    font-size: 24px; /* Adjusts the font size */
+    text-align: center; /* Centers the text */
+    background-color: transparent; /* Transparent background (not filled) */
+}
+    
 
 /* Enforce 800px by 800px dimensions on desktop */
 @media (min-width: 768px) {
