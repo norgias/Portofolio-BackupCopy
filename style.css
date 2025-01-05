@@ -245,6 +245,13 @@ Copy code
     overflow: hidden;
     margin: 20px auto;
 }
+.carousel-label {
+    margin-top: 5px; /* Add space between image and label */
+    font-size: 14px; /* Adjust label font size */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    display: block; /* Ensure labels are displayed properly */
+}
 
 .carousel-track {
     display: flex;
@@ -289,6 +296,11 @@ Copy code
 
 .carousel-btn.next {
     right: 10px;
+}
+@media (max-width: 768px) {
+    .carousel-label {
+        font-size: 12px; /* Slightly smaller text on mobile */
+    }
 }
 
 /* Contact Form Styles */
