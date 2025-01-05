@@ -344,10 +344,17 @@ form button {
 
 
 /* Mobile Menu Behavior */
-@media (max-width: 767px) {
-    .about-box { 
-        max-width: 400px;
-    }
+@media (max-width: 768px) {
+    .about-box {
+    width: 80%; /* Reduce width */
+    padding: 10px; /* Decrease padding */
+  }
+
+  .about-box p {
+    font-size: 11px; /* Decrease font size */
+    line-height: 1.5; /* Maintain good readability */
+  }
+  
     
     #menu {
         display: block; /* Show menu when toggled */
