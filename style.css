@@ -204,7 +204,7 @@ Copy code
 
 .about-box {
     background-color: #ffffff; /* Background color for the box */
-    border-radius: 15px; /* Slightly rounded edges */
+    border-radius: 10px; /* Slightly rounded edges */
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8); /* Very heavy drop shadow */
     padding: 40px; /* Padding inside the box */
     max-width: 600px; /* Limit the box width */
@@ -345,6 +345,10 @@ form button {
 
 /* Mobile Menu Behavior */
 @media (max-width: 767px) {
+    .about-box { 
+        max-width: 400px;
+    }
+    
     #menu {
         display: block; /* Show menu when toggled */
         max-height: 0; /* Hidden by default */
@@ -376,8 +380,8 @@ form button {
          flex: 0 1 auto; /* Prevents it from growing too large */
          padding-right: 20px;
          background-color: transparent !important;
-    
-     }
+    }
+}
 
 /* Desktop Menu Behavior */
 @media (min-width: 768px) {
