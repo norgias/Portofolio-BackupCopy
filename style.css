@@ -260,12 +260,10 @@ Copy code
 }
 
 .carousel-item {
-    flex: 0 0 100%; 
-    text-align: center;
+    position: relative; /* Ensure labels are positioned relative to their parent */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    flex-direction: column; /* Stack image and label */
+    align-items: center; /* Center the content */
 }
 .carousel-item img {
     max-width: 100%; /* Ensure images are responsive */
