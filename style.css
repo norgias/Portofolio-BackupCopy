@@ -346,7 +346,7 @@ form button {
 /* Mobile Menu Behavior */
 @media (max-width: 768px) {
   .about-box {
-    margin-top: -60px;
+    margin-top: -90px;
     width: 85%; /* Reduce width */
     padding: 10px; /* Decrease padding */
     margin-bottom: 5px;
