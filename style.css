@@ -260,7 +260,6 @@ Copy code
 }
 
 .carousel-item {
-    position: relative; /* Ensure labels are positioned relative to their parent */
     display: flex;
     flex-direction: column; /* Stack image and label */
     align-items: center; /* Center the content */
