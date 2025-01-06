@@ -257,6 +257,13 @@ Copy code
     text-align: center; /* Center everything */
     text-decoration: none; /* Remove underline from links */
 }
+.carousel-label {
+    margin-top: 10px; /* Space between image and label */
+    font-size: 16px; /* Adjust font size */
+    color: white; /* White text color */
+    text-align: center; /* Center-align label text */
+}
+
 
 .carousel-item {
     flex: 0 0 100%; 
