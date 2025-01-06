@@ -251,6 +251,12 @@ Copy code
     transition: transform 0.5s ease-in-out;
     gap: 10px; /* Add spacing between thumbnails */
 }
+.carousel-track a {
+    display: flex;
+    flex-direction: column; /* Stack image and label vertically */
+    text-align: center; /* Center everything */
+    text-decoration: none; /* Remove underline from links */
+}
 
 .carousel-item {
     flex: 0 0 100%; 
