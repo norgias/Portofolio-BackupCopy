@@ -239,32 +239,44 @@ Copy code
 }
 
 /* Carousel Styles */
+
 .carousel {
     position: relative;
     width: 100%;
     overflow: hidden;
     margin: 20px auto;
 }
+.carousel-item {
+    position: relative; /* Ensure labels are positioned relative to their parent */
+    display: flex;
+    flex-direction: column; /* Stack image and label */
+    align-items: center; /* Center the content */
+}
+
+.carousel-label {
+    margin-top: 5px; /* Add space between image and label */
+    font-size: 14px; /* Adjust label font size */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    display: block; /* Ensure labels are displayed properly */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Keep images responsive */
+    border-radius: 10px; /* Optional: Rounded edges */
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+@media (max-width: 768px) {
+    .carousel-label {
+        font-size: 12px; /* Slightly smaller text on mobile */
+    }
+}
 
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
     gap: 10px; /* Add spacing between thumbnails */
-}
-
-.carousel-item {
-    flex: 0 0 100%; 
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.carousel-item img {
-    max-width: 100%; /* Ensure images are responsive */
-    border-radius: 10px; /* Optional: Rounded edges for thumbnails */
-    transition: transform 0.3s ease; /* Add hover effect */
-    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8);
 }
 
 .carousel-item img:hover {
