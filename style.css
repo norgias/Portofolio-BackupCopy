@@ -253,25 +253,35 @@ Copy code
 }
 
 .carousel-item {
-    flex: 0 0 100%; 
+    flex: 0 0 auto; /* Items take up their content size */
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Stack img and label vertically */
+    justify-content: flex-start; /* Align items at the top */
+    align-items: center; /* Center align horizontally */
     overflow: hidden;
 }
+
 .carousel-item img {
-    max-width: 100%; /* Ensure images are responsive */
-    border-radius: 10px; /* Optional: Rounded edges for thumbnails */
-    transition: transform 0.3s ease; /* Add hover effect */
+    max-width: 100%; /* Keep images responsive */
+    border-radius: 10px; /* Optional: Rounded edges */
+    transition: transform 0.3s ease; /* Hover effect */
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8);
 }
+
+
 .carousel-label {
-    margin-top: 5px; /* Add space between image and label */
-    font-size: 14px; /* Adjust label font size */
+    margin-top: 10px; /* Space between image and label */
+    font-size: 14px; /* Adjust font size */
     color: white; /* White text color */
-    text-align: center; /* Center text */
+    text-align: center; /* Center align text */
     display: block; /* Ensure labels are displayed properly */
+}
+
+@media (max-width: 768px) {
+    .carousel-label {
+        font-size: 12px; /* Smaller font for mobile */
+    }
 }
 
 
