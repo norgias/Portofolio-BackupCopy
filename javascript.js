@@ -113,12 +113,12 @@ let player;
 // YouTube Player Initialization
 function onYouTubeIframeAPIReady() {
     new YT.Player('player', {
-        videoId: 'hILfY66HEY8', // Replace with your video ID
+        videoId: 'rpWrtXyEAN0', // Replace with your video ID
         playerVars: {
             autoplay: 1,       // Start automatically
             mute: 1,           // Mute the video
             loop: 1,           // Enable looping
-            playlist: 'hILfY66HEY8', // Required for looping
+            playlist: 'rpWrtXyEAN0', // Required for looping
             controls: 0,       // Hide video controls
             modestbranding: 1, // Minimal YouTube branding
             rel: 0,            // Disable related videos
