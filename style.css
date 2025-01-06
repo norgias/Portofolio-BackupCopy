@@ -266,6 +266,14 @@ Copy code
     transition: transform 0.3s ease; /* Add hover effect */
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8);
 }
+.carousel-label {
+    margin-top: 5px; /* Add space between image and label */
+    font-size: 14px; /* Adjust label font size */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    display: block; /* Ensure labels are displayed properly */
+}
+
 
 .carousel-item img:hover {
     transform: scale(1.05); /* Slight zoom on hover */
