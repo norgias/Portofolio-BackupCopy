@@ -211,7 +211,7 @@ Copy code
 }
 
 .about-box {
-    background-color: #ffffff; /* Background color for the box */
+    background-color: rgba(255, 255, 255, 0.75); /* Background color for the box */
     border-radius: 10px; /* Slightly rounded edges */
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8); /* Very heavy drop shadow */
     padding: 40px; /* Padding inside the box */
