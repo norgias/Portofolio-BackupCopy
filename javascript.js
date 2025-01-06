@@ -102,6 +102,14 @@ carousels.forEach((carousel) => {
     window.addEventListener('resize', updateCarousel);
 });
 
+// Load the YouTube API script dynamically
+let tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+let firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+let player;
+
 // YouTube Player Initialization
 function onYouTubeIframeAPIReady() {
     new YT.Player('player', {
