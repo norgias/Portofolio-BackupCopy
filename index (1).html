@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=12.8">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="video-container">
+    <div id="player"></div>
+</div>
+    
+    <header>
+        <nav id="navbar">
+            <div id="name-header">Nicolas J. Orgias | Web Development | Video Editing</div>
+            <button id="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Hamburger Icon -->
+                <i class="fas fa-times"></i> <!-- X Icon -->
+            </button>
+            <ul id="menu">
+                <li><a href="#about">HOME</a></li>
+                <li><a href="#slider1">WEB</a></li>
+                <li><a href="#slider2">VIDEO</a></li>
+                <li><a href="#contact">EMAIL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+
+        
+        
+        <section class="about" id="about">
+            <div class="about-box">
+               <h1>ABOUT ME</h1>
+               <p>Hello! I'm Nick, a designer and problem solver hailing from Toronto. I turn ideas into reality through web development and video editing. With a passion for stunning, functional designs, I create experiences that leave a lasting impact. My journey has sharpened my skills, blending technical expertise with artistic vision. Let's build something amazing together!</p>
+            </div>
+        </section>
+
+   <section id="slider2" class="section slider">
+         <h2>VIDEO EDITING</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <!-- Add YouTube video links and thumbnails -->
+                    <a href="https://www.youtube.com/watch?v=J-_PtftrunI" target="_blank" class="carousel-item">
+                    <img src="https://img.youtube.com/vi/J-_PtftrunI/maxresdefault.jpg" alt="Video 1 Thumbnail"></a>
+                    <a href="https://www.youtube.com/watch?v=d1pUVqH36cI" target="_blank" class="carousel-item">
+                    <img src="https://img.youtube.com/vi/d1pUVqH36cI/maxresdefault.jpg" alt="Video 2 Thumbnail"></a>
+                    <a href="https://www.youtube.com/watch?v=oe7NVslmKN8" target="_blank" class="carousel-item">
+                    <img src="https://img.youtube.com/vi/oe7NVslmKN8/maxresdefault.jpg" alt="Video 3 Thumbnail"></a>
+                 </div>
+               <button class="carousel-btn prev">&#9664;</button>
+               <button class="carousel-btn next">&#9654;</button>
+             </div>
+        </section>
+
+    
+<section id="slider1" class="section slider" style="color: black;">
+    <h2>WEB DEVELOPEMENT</h2>
+    <div class="carousel">
+        <div class="carousel-track">
+            <!-- Add placeholders for project links -->
+            <a href="https://norgias.github.io/Larryn/" target="_blank" class="carousel-item">
+                <img src="larryn.png" alt="Project 1 Thumbnail">
+            </a>
+            <a href="https://example.com/project2" target="_blank" class="carousel-item">
+                <img src="https://via.placeholder.com/800" alt="Project 2 Thumbnail">
+            </a>
+            <a href="https://example.com/project3" target="_blank" class="carousel-item">
+                <img src="https://via.placeholder.com/800" alt="Project 3 Thumbnail">
+            </a>
+        </div>
+        <button class="carousel-btn prev">&#9664;</button>
+        <button class="carousel-btn next">&#9654;</button>
+    </div>
+</section>
+
+ 
+
+        <section id="contact" class="section contact">
+            <h2>CONTACT</h2>
+            <form id="contact-form" action="https://formspree.io/f/mpwwolqr" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 Nicolas J Orgias Portfolio</p>
+    </footer>
+        <!-- Include YouTube Player API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="javascript.js?v=2.4"></script>
+</body>
+</html>
